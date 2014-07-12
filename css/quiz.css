@@ -1,0 +1,131 @@
+.wm-regex-quiz {
+	opacity: 1;
+	clear: both;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.wm-regex-quiz-hidden {
+	opacity: 0 !important;
+}
+
+.wm-regex-quiz-hidden-slide {
+	max-height: 0 !important;
+	opacity: 0 !important;
+}
+
+.wm-regex-quiz .hidden {
+	display: none;
+}
+
+.wm-regex-quiz .question {
+	max-height: 300px;
+	overflow: hidden;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	transition: 500ms;
+}
+
+.wm-regex-quiz .question code,
+.wm-regex-quiz .question pre {
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+
+.wm-regex-quiz .answer {
+	display: block;
+	width: 100%;
+	padding: 0.675em;
+	font: inherit;
+	line-height: inherit;
+	border: 1px solid #e7e7e7;
+	border-color: rgba(22,36,54,.2);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wm-regex-quiz .answer:focus {
+	outline: none;
+	border-color: #c73;
+}
+
+.wm-regex-quiz .rate-container {
+	width: 100%;
+	height: 1.5em;
+	background: #eee;
+	margin-bottom: 1.5em;
+}
+
+.wm-regex-quiz .rate-container div {
+	width: 0;
+	height: 100%;
+	background: #c73;
+	color: #fff;
+	text-align: right;
+	padding-right: 0.5em;
+	-webkit-transition: width 500ms ease-out;
+	-moz-transition: width 500ms ease-out;
+	-o-transition: width 500ms ease-out;
+	transition: width 500ms ease-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wm-regex-quiz .rate-container span,
+.wm-regex-quiz .results {
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.wm-regex-quiz .zero div {
+	color: #000;
+	padding-right: 0;
+}
+
+.wm-regex-quiz .results {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.wm-regex-quiz .results li {
+	margin-bottom: 1.5em;
+	position: relative;
+}
+
+.wm-regex-quiz .results li:before {
+	position: absolute;
+	top: -2px;
+	right: 100%;
+}
+
+.wm-regex-quiz .results .correct:before {
+	content: "\2713\00a0";
+	color: #3a5;
+	font-size: 1.5em;
+}
+
+.wm-regex-quiz .results .wrong:before {
+	content: "\00d7\00a0";
+	color: #c43;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.wm-regex-quiz .results .your-answer {
+	font-weight: bold;
+}
+
+.wm-regex-quiz .results .notice {
+	font-style: italic;
+}
